@@ -1,4 +1,4 @@
-#!/usr/bin/env bas
+#!/usr/bin/env bash
 
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
