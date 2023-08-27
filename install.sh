@@ -36,10 +36,17 @@ sudo apt install -y firefox-esr
 # Desktop background browser/handler
 sudo apt install -y feh
 
+# Packages needed for window manager installation
+sudo apt install -y picom rofi dunst libnotify-bin unzip
+
+# Install Lightdm Console Display Manager
+sudo apt install -y lightdm lightdm-gtk-greeter-settings
+sudo systemctl enable lightdm
+
 ########################################################
 # End of script for default config
 #
 
 sudo apt autoremove
 
-printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
+printf "\e[1;32mYou can now reboot! Thank you.\e[0m\n"
