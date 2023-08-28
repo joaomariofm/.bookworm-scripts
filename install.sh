@@ -36,6 +36,13 @@ sudo apt install -y firefox-esr
 # Desktop background browser/handler
 sudo apt install -y feh
 
+# Printing and bluetooth
+sudo apt install -y cups system-config-printer simple-scan
+sudo apt install -y bluez blueman
+
+sudo systemctl enable cups
+sudo systemctl enable bluetooth
+
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip
 
