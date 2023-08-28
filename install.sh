@@ -10,16 +10,13 @@ sudo apt install -y build-essentialh
 xdg-user-dirs-update
 
 # Window Manager
-sudo apt install -y i3-wm suckless-tools sxhkd polybar
+sudo apt install -y i3-wm suckless-tools 
 
 # Network File Tools/System Events
-sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
+sudo apt install -y dialog avahi-daemon acpi acpid gvfs-backends
 
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
-
-# Networking etc
-sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
@@ -28,7 +25,7 @@ sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 sudo apt install -y neofetch
 
 # Network Manager
-sudo apt install -y network-manager network-manager-gnome
+sudo apt install -y network-manager
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr
