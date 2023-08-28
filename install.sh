@@ -4,7 +4,7 @@
 sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 
 # PACKAGE INCLUDES build-essential.
-sudo apt install -y build-essentialh
+sudo apt install -y build-essential
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
