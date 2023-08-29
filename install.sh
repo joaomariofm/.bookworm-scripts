@@ -28,7 +28,13 @@ sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 sudo apt install -y neofetch
 
 # Network Manager
-sudo apt install -y network-manager wpasupplicant
+sudo apt install -y network-manager
+
+# Iwd
+sudo apt install -y iwd
+
+# DNS related
+sudo apt install -y resolvconf
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr
