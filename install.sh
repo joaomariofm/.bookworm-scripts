@@ -33,9 +33,6 @@ sudo apt install -y network-manager
 # Iwd
 sudo apt install -y iwd
 
-# DNS related
-sudo apt install -y resolvconf
-
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr
 
