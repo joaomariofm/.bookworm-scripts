@@ -24,6 +24,9 @@ sudo apt install -y kitty
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 
+# Brightness control
+sudo apt install -y brightnessctl
+
 # Neofetch
 sudo apt install -y neofetch
 
