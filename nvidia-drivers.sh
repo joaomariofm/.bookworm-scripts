@@ -12,3 +12,11 @@ sudo apt update
 
 # Installing Nvidia Driver
 sudo apt install -y nvidia-driver
+
+########################################################
+# End of script for default config
+#
+
+sudo apt autoremove
+
+printf "\e[1;32mYou can now reboot! Thank you.\e[0m\n"
