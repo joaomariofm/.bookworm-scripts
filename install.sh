@@ -69,6 +69,9 @@ cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/
 # Moving dotfiles
 cp -r ~/bookworm-scripts/resources/dotfiles/* ~/.config/
 
+# Install NerdFonts
+bash ~/bookworm-scripts/resources/nerdfonts.sh
+
 sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thank you.\e[0m\n"
