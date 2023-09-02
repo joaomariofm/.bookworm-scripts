@@ -58,6 +58,9 @@ sudo apt install -y feh
 sudo apt install -y cups system-config-printer simple-scan
 sudo apt install -y bluez blueman
 
+## Breaking blueman-tray
+sudo mv /usr/bin/blueman-tray /usr/bin/-break-blueman-tray
+
 sudo systemctl enable cups
 sudo systemctl enable bluetooth
 
