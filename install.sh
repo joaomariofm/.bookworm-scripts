@@ -78,11 +78,14 @@ sudo systemctl enable lightdm
 # Moving wallpapers
 cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/ 
 
-# Moving config-files
+# Moving config files
 cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
 
 # Install NerdFonts
 bash ~/bookworm-scripts/resources/nerdfonts.sh
+
+# Moving shell config files
+cp ~/bookworm-scripts/resources/shell/.zshrc ~/bookworm-scripts/resources/shell/.p10k.zsh ~/
 
 sudo apt autoremove
 
