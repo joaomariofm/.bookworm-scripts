@@ -61,9 +61,6 @@ sudo apt install -y bluez blueman
 sudo systemctl enable cups
 sudo systemctl enable bluetooth
 
-# Removing bluetooth icon shortcut
-sudo rm /etc/xdg/autostart/blueman.desktop
-
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip
 
