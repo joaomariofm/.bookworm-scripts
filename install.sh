@@ -21,6 +21,14 @@ sudo systemctl enable acpid
 # Terminal (eg. kitty)
 sudo apt install -y kitty
 
+# Zsh
+sudo apt install -y zsh
+## set as default shell
+chsh -s /bin/zsh
+## zsh-autosuggestions
+mkdir ~/.zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
 
