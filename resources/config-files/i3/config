@@ -66,6 +66,9 @@ bindsym $mod+Shift+q kill
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
+# bluetooth shortcut
+bindsym $mod+Shift+b exec --no-startup-id blueman-manager
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
