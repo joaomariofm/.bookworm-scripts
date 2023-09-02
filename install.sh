@@ -27,6 +27,9 @@ sudo apt install -y zsh
 mkdir ~/.zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
+# Powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+
 ## To set zsh as default shell run (and inform the user password) 
 # chsh -y -s /bin/zsh
 
