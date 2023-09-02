@@ -74,8 +74,8 @@ sudo systemctl enable lightdm
 # Moving wallpapers
 cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/ 
 
-# Moving dotfiles
-cp -r ~/bookworm-scripts/resources/dotfiles/* ~/.config/
+# Moving config-files
+cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
 
 # Install NerdFonts
 bash ~/bookworm-scripts/resources/nerdfonts.sh
