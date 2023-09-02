@@ -76,6 +76,7 @@ sudo systemctl enable lightdm
 #
 
 # Moving wallpapers
+mkdir ~/Imagens/wallpapers
 cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/ 
 
 # Moving config files
