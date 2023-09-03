@@ -73,8 +73,8 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 # Install ly Display Manager
 sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
-(cd ./ly && make run)
-(cd ./ly && make install installsystemd)
+(cd ~/.ly && make)
+(cd ~/.ly && sudo make install installsystemd)
 sudo systemctl enable ly.service
 
 ########################################################
