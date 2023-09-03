@@ -70,9 +70,12 @@ sudo systemctl enable bluetooth
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip
 
-# Install Lightdm Console Display Manager
-sudo apt install -y lightdm lightdm-gtk-greeter-settings
-sudo systemctl enable lightdm
+# Install ly Display Manager
+sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
+git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
+(cd ./ly && make run)
+(cd ./ly && make install installsystemd)
+sudo systemctl enable ly.service
 
 ########################################################
 # End of script for default config
