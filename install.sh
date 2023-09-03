@@ -34,7 +34,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10
 # chsh -y -s /bin/zsh
 
 # Exa
-sudo apt install exa
+sudo apt install -y exa
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer
