@@ -15,6 +15,7 @@ sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 # config
 echo 'options nvidia-drm modeset=1' | sudo tee -a /etc/modprobe.d/nvidia.conf
+echo 'HandleLidSwitch=ignore' | sudo tee -a /etc/systemd/logind.conf
 xrandr --setprovideroutputsource 1 0
 
 ########################################################
