@@ -13,6 +13,10 @@ sudo apt update
 # Installing Nvidia Driver
 sudo apt install -y nvidia-driver firmware-misc-nonfree
 
+# config
+echo 'options nvidia-drm modeset=1' | sudo tee -a /etc/modprobe.d/nvidia.conf
+xrandr --setprovideroutputsource 1 0
+
 ########################################################
 # End of script for default config
 #
