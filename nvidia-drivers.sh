@@ -5,13 +5,13 @@ sudo apt install -y software-properties-common
 sudo apt install -y linux-headers-amd64
 
 # Adding non-free and contrib repositories
-sudo apt-add-repository -y non-free contrib
+sudo apt-add-repository -y non-free non-free-firmware contrib
 
 # Updating repositories
 sudo apt update
 
 # Installing Nvidia Driver
-sudo apt install -y nvidia-driver
+sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 ########################################################
 # End of script for default config
@@ -19,4 +19,5 @@ sudo apt install -y nvidia-driver
 
 sudo apt autoremove
 
+printf "\e[1;33mIt is required to disable secure boot.\e[0m\n"
 printf "\e[1;32mYou can now reboot! Thank you.\e[0m\n"
