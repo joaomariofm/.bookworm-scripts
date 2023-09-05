@@ -23,6 +23,13 @@ default_floating_border pixel 0
 gaps inner 8
 gaps outer 4
 
+# Monitors
+set $fm eDP
+set $sm HDMI-1-0
+
+bindsym $mod+Shift+n exec --no-startup-id xrandr --output $fm --auto --output $sm --off
+bindsym $mod+Shift+m exec --no-startup-id xrandr --output $sm --auto --output $fm --off
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
