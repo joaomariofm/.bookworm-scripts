@@ -3,23 +3,23 @@
 ## Toggle Display Power Manger Service (DPMS)
 
 ### Turn on 
-```shell
+```bash
     xset +dpms
 ```
 
 ### Turn off
-```shell
+```bash
     xset -dpms
 ```
 
 ## Toggle Black Screensaver
 
 ### Turn on
-```shell
+```bash
     xset s on
 ```
 
 ### Turn on
-```shell
-        xset s off
+```bash
+    xset s off
 ```

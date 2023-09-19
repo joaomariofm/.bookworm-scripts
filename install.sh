@@ -21,6 +21,9 @@ sudo systemctl enable acpid
 # Terminal (eg. kitty)
 sudo apt install -y kitty
 
+# FlameShot 
+sudo apt install -y flameshot
+
 # Zsh
 sudo apt install -y zsh
 ## zsh-autosuggestions
