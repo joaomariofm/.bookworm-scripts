@@ -92,7 +92,7 @@ cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/
 cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
 
 # Install NerdFonts
-bash ~/bookworm-scripts/resources/nerdfonts.sh
+bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
 
 # Moving shell config files
 cp ~/bookworm-scripts/resources/shell/.zshrc ~/bookworm-scripts/resources/shell/.p10k.zsh ~/
