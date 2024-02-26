@@ -79,6 +79,9 @@ bindsym $mod+Shift+b exec --no-startup-id blueman-manager
 # flameshot
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
+#change keyboard layout
+bindsym $mod+space exec --no-startup-id /usr/local/scripts/toggle_keyboard.sh
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
@@ -129,7 +132,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
