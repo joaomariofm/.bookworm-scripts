@@ -73,6 +73,12 @@ sudo systemctl enable bluetooth
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip
 
+# playerctl
+sudo apt install -y playerctl
+
+# xclip
+sudo apt install -y xclip
+
 # Install ly Display Manager
 sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
