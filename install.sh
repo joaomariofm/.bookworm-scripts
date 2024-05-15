@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
 
+# Create folders in user directory (eg. Documents,Downloads,etc.)
+xdg-user-dirs-update
+
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput
 
 # PACKAGE INCLUDES build-essential.
 sudo apt install -y build-essential
 
-# Create folders in user directory (eg. Documents,Downloads,etc.)
-xdg-user-dirs-update
-
 # Window Manager
 sudo apt install -y i3-wm suckless-tools 
 
 # Network File Tools/System Events
 sudo apt install -y dialog avahi-daemon acpi acpid gvfs-backends
-
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
@@ -23,18 +22,6 @@ sudo apt install -y kitty
 
 # FlameShot 
 sudo apt install -y flameshot
-
-# Zsh
-sudo apt install -y zsh
-## zsh-autosuggestions
-mkdir ~/.zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-
-# Powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
-
-## To set zsh as default shell run (and inform the user password) 
-# chsh -y -s /bin/zsh
 
 # Exa and Bat
 sudo apt install -y exa bat
@@ -63,12 +50,11 @@ sudo apt install -y feh
 # Printing and bluetooth
 sudo apt install -y cups system-config-printer simple-scan
 sudo apt install -y bluez blueman
+sudo systemctl enable cups
+sudo systemctl enable bluetooth
 
 ## Breaking blueman-tray
 sudo mv /usr/bin/blueman-tray /usr/bin/-break-blueman-tray
-
-sudo systemctl enable cups
-sudo systemctl enable bluetooth
 
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip
@@ -99,9 +85,6 @@ cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
 
 # Install NerdFonts
 bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
-
-# Moving shell config files
-cp ~/bookworm-scripts/resources/shell/.zshrc ~/bookworm-scripts/resources/shell/.p10k.zsh ~/
 
 sudo apt autoremove
 
