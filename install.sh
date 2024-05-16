@@ -68,8 +68,9 @@ sudo apt install -y xclip
 # Install ly Display Manager
 sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
-(cd ~/.ly && make)
-(cd ~/.ly && sudo make install installsystemd)
+(cd ~/.ly && git checkout tags/v0.5.3)
+(cd ~/.ly && sudo make gitea)
+(cd ~/.ly && sudo make install)
 sudo systemctl enable ly.service
 
 ########################################################
