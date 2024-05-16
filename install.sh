@@ -65,6 +65,17 @@ sudo apt install -y playerctl
 # xclip
 sudo apt install -y xclip
 
+# Moving wallpapers
+mkdir ~/Pictures/wallpapers
+cp ~/bookworm-scripts/resources/wallpapers/* ~/Pictures/wallpapers/ 
+
+# Moving config files
+mkdir ~/.config
+cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
+
+# Install NerdFonts
+bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
+
 # Install ly Display Manager
 sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
@@ -76,16 +87,6 @@ sudo systemctl enable ly.service
 ########################################################
 # End of script for default config
 #
-
-# Moving wallpapers
-mkdir ~/Imagens/wallpapers
-cp ~/bookworm-scripts/resources/wallpapers/* ~/Imagens/wallpapers/ 
-
-# Moving config files
-cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
-
-# Install NerdFonts
-bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
 
 sudo apt autoremove
 
