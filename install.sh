@@ -67,14 +67,14 @@ sudo apt install -y xclip
 
 # Moving wallpapers
 mkdir ~/Pictures/wallpapers
-cp ~/bookworm-scripts/resources/wallpapers/* ~/Pictures/wallpapers/ 
+cp ~/.bookworm-scripts/resources/wallpapers/* ~/Pictures/wallpapers/ 
 
 # Moving config files
 mkdir ~/.config
-cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
+cp -r ~/.bookworm-scripts/resources/config-files/* ~/.config/
 
 # Install NerdFonts
-bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
+bash ~/.bookworm-scripts/resources/scripts/nerdfonts.sh
 
 # Copy toggle_keyboard script
 sudo cp ./resources/scripts/toggle_keyboard.sh /usr/local/bin/
