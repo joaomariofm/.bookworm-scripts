@@ -76,6 +76,9 @@ cp -r ~/bookworm-scripts/resources/config-files/* ~/.config/
 # Install NerdFonts
 bash ~/bookworm-scripts/resources/scripts/nerdfonts.sh
 
+# Copy toggle_keyboard script
+sudo cp ./resources/scripts/toggle_keyboard.sh /usr/local/bin/
+
 # Install ly Display Manager
 sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/.ly
