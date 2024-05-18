@@ -1,0 +1,24 @@
+# Sets user-defined palette
+palette = "gruvbox"
+
+add_newline=false
+
+[character]
+# Note the use of Catppuccin color 'maroon'
+success_symbol = "[[](aqua) ❯](purple)"
+error_symbol = "[[](red) ❯](purple)"
+vimcmd_symbol = "[❮](green)"
+
+[directory]
+truncation_length = 4
+style = 'bold blue'
+
+# palette tables should be last in the config ⚓️
+[palettes.gruvbox]
+red = '#fb4934'
+green = '#b8bb26'
+yellow = '#fabd2f'
+blue = '#83a598'
+purple = '#d3869b'
+aqua = '#8ec07c'
+orange = '#fe8019'
